@@ -1,0 +1,21 @@
+# System files
+Thumbs.db
+.DS_Store
+
+# OS-generated files
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# Node or bundler stuff (optional, if used later)
+node_modules/
+dist/
+.cache/
+
+# Mac system
+._*
