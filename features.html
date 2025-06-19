@@ -4,77 +4,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SecureDoc – Features</title>
-  <meta name="description" content="Explore SecureDoc's advanced features like blockchain signatures, bulk PDF stamping, and enterprise workflows.">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-white text-gray-800 font-sans">
+<body class="bg-white text-gray-900 font-sans">
 
-  <!-- Hero -->
-  <section class="bg-gray-900 text-white py-12">
-    <div class="container mx-auto px-6 text-center">
-      <h1 class="text-4xl md:text-5xl font-bold leading-tight">Features That Matter</h1>
-      <p class="mt-4 text-lg md:text-xl">Built for scale, security, and global compliance</p>
+  <!-- Navbar (inserted above) -->
+  <header class="bg-gray-900 text-white p-4">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">SecureDoc</h1>
+      <nav>
+        <a href="index.html" class="mx-2 hover:underline">Home</a>
+        <a href="features.html" class="mx-2 hover:underline">Features</a>
+        <a href="verify.html" class="mx-2 hover:underline">Verify</a>
+        <a href="compliance.html" class="mx-2 hover:underline">Compliance</a>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <!-- Overview -->
-  <section class="py-16 bg-white">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-4">Why SecureDoc Stands Out</h2>
-      <p class="mt-4 text-lg leading-relaxed">
-        From document hashing to blockchain-based signing workflows, SecureDoc offers an end-to-end system
-        for regulated industries that demand reliability, traceability, and performance.
-      </p>
-    </div>
-  </section>
+  <main class="max-w-4xl mx-auto p-6">
+    <h2 class="text-3xl font-bold mb-4">Key Features</h2>
+    <ul class="space-y-4 text-lg">
+      <li><strong>🔐 Blockchain Signatures:</strong> Tamper-proof and verifiable using Hedera Hashgraph.</li>
+      <li><strong>📁 Bulk Document Support:</strong> Sign hundreds or thousands of files in batches.</li>
+      <li><strong>📝 Stamped PDF Signatures:</strong> Visual seals with verifiable metadata & links.</li>
+      <li><strong>🧾 Audit Trail:</strong> Full signature history, timestamps, and signer identity logs.</li>
+      <li><strong>🛡️ Security First:</strong> SHA-256 document hashing, AES encryption, and KYC-backed signer identity.</li>
+    </ul>
+  </main>
 
-  <!-- Features Grid -->
-  <section class="bg-gray-100 py-16">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-10">Core Capabilities</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-        <div>
-          <h3 class="text-xl font-semibold">Blockchain Signatures</h3>
-          <p class="mt-2">Digitally sign every document using Hedera Hashgraph and verify instantly.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold">Bulk PDF Handling</h3>
-          <p class="mt-2">Batch convert, watermark, and sign thousands of PDFs in seconds.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold">Workflow Control</h3>
-          <p class="mt-2">Sequential or parallel signer setups for internal and external stakeholders.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold">QR Verification</h3>
-          <p class="mt-2">Every document includes a unique verification QR code and hash stamp.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold">Smart Contracts</h3>
-          <p class="mt-2">Build programmable rules into your signing flows via secure contract logic.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold">Audit Trails</h3>
-          <p class="mt-2">Real-time tracking of signers, timestamps, and changes — all on chain.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="py-16 bg-white">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-2xl font-bold">Need a Custom Integration?</h2>
-      <p class="mt-4 text-lg">
-        We support secure on-prem deployment and custom API access for regulated environments.
-        Reach out to us at <a href="mailto:info@securedoc.in" class="underline">info@securedoc.in</a>
-      </p>
-    </div>
-  </section>
-
-  <footer class="bg-black text-white text-center py-4">
-    &copy; 2025 SecureDoc. All rights reserved.
+  <footer class="bg-gray-100 text-center text-sm p-4 mt-10">
+    © 2025 SecureDoc. All rights reserved.
   </footer>
-
 </body>
 </html>

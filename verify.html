@@ -3,45 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SecureDoc – Verify Document</title>
-  <meta name="description" content="Verify digitally signed documents via the SecureDoc blockchain validation system. Trusted by banks, secured by Hedera.">
+  <title>SecureDoc – Verify Documents</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-white text-gray-800 font-sans">
+<body class="bg-white text-gray-900 font-sans">
 
-  <!-- Hero -->
-  <section class="bg-gray-900 text-white py-12">
-    <div class="container mx-auto px-6 text-center">
-      <h1 class="text-4xl md:text-5xl font-bold leading-tight">Document Verification</h1>
-      <p class="mt-4 text-lg md:text-xl">Validate document authenticity via blockchain in real-time</p>
+  <!-- Navbar (same as above) -->
+  <header class="bg-gray-900 text-white p-4">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">SecureDoc</h1>
+      <nav>
+        <a href="index.html" class="mx-2 hover:underline">Home</a>
+        <a href="features.html" class="mx-2 hover:underline">Features</a>
+        <a href="verify.html" class="mx-2 hover:underline">Verify</a>
+        <a href="compliance.html" class="mx-2 hover:underline">Compliance</a>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <!-- Verification Info -->
-  <section class="py-16 bg-white">
-    <div class="max-w-3xl mx-auto px-6 text-center">
-      <h2 class="text-2xl font-bold mb-4">How It Works</h2>
-      <p class="text-lg leading-relaxed">
-        Every document signed with SecureDoc is registered on the Hedera Hashgraph network.
-        Using the hash embedded in the PDF or QR code, you can verify if the document is genuine,
-        tamper-free, and issued by a trusted entity.
-      </p>
-    </div>
-  </section>
+  <main class="max-w-4xl mx-auto p-6">
+    <h2 class="text-3xl font-bold mb-4">Verify Documents</h2>
+    <p class="text-lg leading-relaxed mb-4">
+      Every document signed through SecureDoc includes a blockchain hash and a secure verification link.
+      Users can visit <a href="https://oliveir3.github.io/securedoc-verify/" class="text-blue-600 underline">securedoc-verify</a> to check a file’s authenticity.
+    </p>
+    <p class="text-lg leading-relaxed">
+      Our system uses:
+      <ul class="list-disc list-inside mt-2 text-lg">
+        <li>Document hashing via SHA-256</li>
+        <li>Immutable proof via Hedera topic messages</li>
+        <li>Timestamp + signer identity</li>
+        <li>Public-facing verification portal</li>
+      </ul>
+    </p>
+  </main>
 
-  <!-- Simulated Verification Form -->
-  <section class="bg-gray-100 py-16">
-    <div class="max-w-md mx-auto px-6 bg-white p-6 rounded-xl shadow-lg text-center">
-      <h3 class="text-xl font-semibold mb-4">Paste Document Hash</h3>
-      <input type="text" placeholder="e.g. 0xABC123..." class="w-full border border-gray-300 p-3 rounded mb-4">
-      <button class="bg-gray-900 text-white px-6 py-2 rounded hover:bg-gray-800 transition">Verify</button>
-      <p class="mt-4 text-sm text-gray-600">Verification powered by Hedera Testnet</p>
-    </div>
-  </section>
-
-  <footer class="bg-black text-white text-center py-4">
-    &copy; 2025 SecureDoc. All rights reserved.
+  <footer class="bg-gray-100 text-center text-sm p-4 mt-10">
+    © 2025 SecureDoc. All rights reserved.
   </footer>
-
 </body>
 </html>
